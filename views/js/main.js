@@ -421,7 +421,7 @@ var resizePizzas = function(size) {
 
   changeSliderLabel(size);
 
-
+    //removed dx function which is completely a jank
     // Changes the slider value to a percent width
    function changePizzaSizes (size) {
       switch(size) {
@@ -481,9 +481,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
-
-// Moves the sliding background pizzas based on scroll position
-
+// It has been removed because it consumes lots of memory and it's not a must to do thing.
 
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
